@@ -7,7 +7,8 @@ const reader = readline.createInterface({
 
 
 
-reader.question("What would you like to calculate?", function(input){
+reader.question("add = +\nsubtract = -\nmultiply = *\ndivide = /\nsquare root = sqrt\nsquared = **\ncubed = cube\npower of = ^\nremainder = %\nWhat would you like to calculate?"
+, function(input){
 	tokens = input.split(' ');
 	
 	mathSymbol = tokens[0];
@@ -25,7 +26,16 @@ reader.question("What would you like to calculate?", function(input){
 		console.log(num1 / num2);
 	}else if ( mathSymbol === 'sqrt') {
 		console.log(num1 ** .5);
-	}else {
+	}else if ( mathSymbol === '**') {
+		console.log(num1 ** 2);
+	}else if ( mathSymbol === 'cube') {
+		console.log(num1 ** 3);
+	}else if ( mathSymbol === '^') {
+		console.log(num1 ** num2);
+	}else if ( mathSymbol === '%') {
+		console.log(num1 % 2);
+	}
+	else {
 		console.log('That is not a correct input.')
 	}
 
