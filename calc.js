@@ -37,7 +37,7 @@ reader.question("add = +\nsubtract = -\nmultiply = *\ndivide = /\nsquare root = 
 	}else if ( mathSymbol === '^') {
 		console.log(num1 ** num2);
 	}else if ( mathSymbol === '%') {
-		console.log(num1 % 2);
+		console.log(num1 % num2);
 	}
 	else {
 		console.log('That is not a correct input.')
