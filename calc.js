@@ -15,6 +15,20 @@ reader.question("What would you like to calculate?", function(input){
 	num2 = Number(tokens[2]);
 
 
+	if ( mathSymbol === '+') {
+		console.log(num1 + num2);
+	}else if ( mathSymbol === '-') {
+		console.log(num1 - num2);
+	}else if ( mathSymbol === '*') {
+		console.log(num1 * num2);
+	}else if ( mathSymbol === '/') {
+		console.log(num1 / num2);
+	}else if ( mathSymbol === 'sqrt') {
+		console.log(num1 ** .5);
+	}else {
+		console.log('That is not a correct input.')
+	}
+
 	// This line closes the connection to the command line interface.
 	reader.close()
 
